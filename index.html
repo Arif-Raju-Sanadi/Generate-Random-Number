@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Number Generator</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a <br><span>Random Number</span></h1>
+        <div class="display">
+            <input type="text" id="Number" placeholder="Number">
+            
+        </div>
+        <button onclick="generateNumber()"><img src="generate.webp">Generate Number</button>
+
+    </div>
+
+    <script>
+        const numberBox=document.getElementById("Number");
+        const length=1;
+
+        
+        const number="0123456789";
+       
+
+        function generateNumber(){
+            let number1="";
+         
+            number1+=number[Math.floor(Math.random()* number.length)];
+           
+           
+            numberBox.value=number1;
+ }
+
+
+ 
+    </script>
+</body>
+</html>
